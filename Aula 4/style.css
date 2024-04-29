@@ -1,0 +1,42 @@
+/* pode ser feito assim
+ body {  
+    background: beige;
+    background-image: url(imagens/b408fcc9cba2c0034738b28c872242ba.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; contain fica somente na caixa onde esta, Cover ele tenta preencher a tela toda
+} */
+body {
+    background: beige url(imagens/b408fcc9cba2c0034738b28c872242ba.jpg) no-repeat fixed center/cover;/* fixed fixa a imagem no fundo */
+}
+h1 {
+    /* box-sizing: border-box; Quando coloca border-box, só vai utilizar o width e o height */
+    display: block;
+
+    width: auto; /* largura */
+    height: auto; /* altura */
+
+    background: red;
+
+    border: 2px solid yellow;
+
+    /* padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px; */
+
+    padding: 5px; /* fazendo assim, você resume todos os lados (top, right, bottom e left */
+
+    /* margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px; */
+
+    margin: 100px;
+}
+
+a {
+    display: inline-block;
+    border: 1px solid black;
+    width: 80px;
+}
