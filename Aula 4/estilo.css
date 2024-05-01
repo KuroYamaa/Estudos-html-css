@@ -1,0 +1,40 @@
+body {
+    background: blueviolet;
+    margin-top: 100px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+    margin-left: 300px;
+}
+
+#Titulo {
+    text-align: center;
+}
+
+img {
+    width: 500px;
+}
+
+#download {
+    color: azure;
+
+    width: 150px;
+    height: 25px;
+
+    border-radius: 10px;
+    text-align: center;
+    background: cornflowerblue;
+
+}
+
+#central {
+    background: white;
+    border-radius: 10px;
+}
+
+#texto{
+    text-align: center;
+}
+
+#video {
+    text-align: center;
+}
