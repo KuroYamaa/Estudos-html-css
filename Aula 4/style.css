@@ -35,6 +35,10 @@ h1 {
     margin: 100px;
 }
 
+h2 {
+    margin-top: 20px;
+}
+
 a {
     display: inline-block;
     border: 1px solid black;
