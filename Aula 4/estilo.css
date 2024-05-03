@@ -11,7 +11,8 @@ body {
 }
 
 img {
-    width: 500px;
+    width: 1265px;
+    height: 400px;
 }
 
 #download {
@@ -37,4 +38,12 @@ img {
 
 #video {
     text-align: center;
+}
+
+p {
+    padding-left: 25px;
+}
+
+a {
+    color: black;
 }
