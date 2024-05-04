@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: dodgerblue;
+}
+
+#botao {
+    display: none;
+}
+
+label[for='botao'] {
+    cursor: pointer;
+    background: black;
+    color: white;
+    padding: 5px;
+    width: 30px;
+
+    display: none;
+}
+
+#menu {
+    position: relative;
+    text-align: center;
+}
+
+#menu1 {
+    display: inline-block;
+    text-decoration: none;/* Retira aql cor de link */
+    text-transform: uppercase;/* COloca o texto em maiúsculo */
+    font-family: sans-serif;
+    background-color: darkkhaki;
+    color: black;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+a:hover {
+    outline: 3px solid red; /* não ocupa espaço quando passa o mouse em cima */
+}
+
+@media (max-width: 800px) {
+    #menu {
+        margin-top: -170px;
+    }
+    label[for='botao'] {
+        display: block;
+    }
+    #botao:checked ~ #menu {
+        margin-top: 0px;
+    }
+    #menu1 {
+        display: block;
+        width: 100%;
+    }
+}
+
+main {
+    width: 90%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#pagina {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#imgWaffle {
+    width: 100%;
+    height: 300px;
+    background: url(pexels-nikolaos-dimou-1250289.jpg) no-repeat center/cover;
+    border-radius: 10px;
+}
+
+#receitaTexto {
+    margin-top: 16px;/* Distancia da parte de cima */
+    text-align: right;/* Alinhamento do texto */
+    font-size: 12px;/* Tamanho da fonte */
+    font-style: italic;/* Estilo da fonte de texto */
+}
+
+#Download {
+    text-decoration: none;
+    background: dodgerblue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#campo {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+#video {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#subtitulo {
+    text-align: center;
+}
