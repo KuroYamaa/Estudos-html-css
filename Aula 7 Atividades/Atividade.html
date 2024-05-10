@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Minha Apresentação </title>
     <style>
-        :root {/* Tema Claro */
-            --bg-botao: url('Imagens/moon-stars.svg');
-            --bg-site: #d0d0d0;
-            --bg-section: violet;
+        :root {
+            --bg-botao: url('imagem/moon-stars.svg');
+            --bg-site: url('imagem/bg-desktop-light.jpg')
         }
 
-        .dark {/* Tema Escuro */
-            --bg-botao: url('Imagens/sun.svg');
-            --bg-site: #3b3b3b;
-            --bg-section: darkviolet;
+        .dark {
+            --bg-botao: url('imagem/sun.svg');
+            --bg-site: url('imagem/bg-desktop.jpg');
         }
 
         body {
@@ -26,21 +24,15 @@
             width: 30px;
             border-radius: 50%;
             border: 1px solid black;
-            background-color: white url(--bg-botao) no-repeat center center;
+            background: white var(--bg-botao) no-repeat center center;
             cursor: pointer;
             transition: background 0.9s;
-        }
-
-        section {
-            height: 100px;
-            background: var(--bg-section);
         }
     </style>
 </head>
 <body>
     <div id="botao" onclick="toggleMode()" ></div>
 
-        <section></section>
 
 
 
@@ -49,7 +41,7 @@
 
 
     <script>
-        function toggleMode () {
+        function toogleMode () {
             const html = document.documentElement;
             html.classList.toggle("dark");
         }
