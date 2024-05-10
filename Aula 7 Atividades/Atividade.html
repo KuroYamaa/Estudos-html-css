@@ -19,6 +19,15 @@
             background: var(--bg-site);
         }
 
+        #imagem {
+            text-align: center;
+        }
+
+        #foto {
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
         #botao {
             height: 30px;
             width: 30px;
@@ -28,11 +37,26 @@
             cursor: pointer;
             transition: background 0.9s;
         }
+
+        #meio {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <div id="botao" onclick="toggleMode()" ></div>
 
+    <div id="imagem"><img id="foto" src="imagem/MinhaFoto1.jpg" alt="minha foto"></div>
+
+    <div id="botao" onclick="toggleMode()"></div>
+
+    <div id="meio">
+        <a href=""> Link 1 </a>
+        <a href=""> Link 2 </a>
+        <a href=""> Link 3 </a>
+        <a href=""> Link 4 </a>
+    </div>
 
 
 
@@ -41,7 +65,7 @@
 
 
     <script>
-        function toogleMode () {
+        function toggleMode () {
             const html = document.documentElement;
             html.classList.toggle("dark");
         }
