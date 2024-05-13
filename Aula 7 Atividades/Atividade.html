@@ -21,11 +21,25 @@
 
         #imagem {
             text-align: center;
+            padding-top: 20px;
         }
 
         #foto {
             border: 1px solid black;
             border-radius: 50%;
+        }
+
+        p {
+            padding-top: 5px;
+            text-align: center;
+        }
+
+        #mod {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
 
         #botao {
@@ -39,25 +53,83 @@
         }
 
         #meio {
+            padding-top: 30px;
             display: flex;
             flex-direction: column;
-            padding-top: 20px;
+            justify-content: center;
+            align-items: center;
         }
+
+        
+        #item {
+            color: black;
+            text-align: center;
+            margin-bottom: 5px;
+            padding: 10px;
+            border: 1px solid black;
+            height: auto;
+            width: 200px;
+            border-radius:5px;
+        }
+
+        #icones {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #icon {
+            margin-right: 20px;
+        }
+
+        @media (max-width: 700px) {
+            :root {
+            --bg-site: url('imagem/bg-mobile-light.jpg')
+        }
+
+        .dark {
+            --bg-site: url('imagem/bg-mobile.jpg');
+        }
+
+        #item {
+            width: 80%;
+        }
+}
+
     </style>
 </head>
 <body>
 
     <div id="imagem"><img id="foto" src="imagem/MinhaFoto1.jpg" alt="minha foto"></div>
 
-    <div id="botao" onclick="toggleMode()"></div>
+    <p>@KuroYamaa</p>
 
-    <div id="meio">
-        <a href=""> Link 1 </a>
-        <a href=""> Link 2 </a>
-        <a href=""> Link 3 </a>
-        <a href=""> Link 4 </a>
+    <div id="mod">
+        <div id="botao" onclick="toggleMode()"></div>
     </div>
 
+    <div id="meio">
+        <a id="item" href=""> Link 1 </a>
+        <a id="item" href=""> Link 2 </a>
+        <a id="item" href=""> Link 3 </a>
+        <a id="item" href=""> Link 4 </a>
+    </div>
+
+    <div id="icones">
+        <div id="icon">
+            <p><img src="imagem/github.svg" alt="github"></p>
+        </div>
+        <div id="icon">
+            <p><img src="imagem/instagram.svg" alt="instagram"></p>
+        </div>
+        <div id="icon">
+            <p><img src="imagem/youtube.svg" alt="youtube"></p>
+        </div>
+        <div id="icon">
+            <p><img src="imagem/linkedin.svg" alt="linkedin"></p>
+        </div>
+    </div>
 
 
 
